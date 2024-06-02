@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkgrey;
+}
+.nav{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    z-index: 8;
+}
+.nav img{
+    width: 50px;
+    height: 60px;
+    float: left;
+    margin-left: 100px;
+}
+.nav ul li{
+    list-style: none;
+    float: right;
+    margin-right: 50px;
+    color: beige;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../photos/1716132785075.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-text{
+    position: absolute;
+    width: 400px;
+    height: 220px;
+    text-align: center;
+    margin: 0 50%;
+    top: 50%; 
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.301);
+    font-size: 100px;
+    border-radius: 12px;
+    z-index: 2;
+}
+.hero button{
+    width: 150px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: rgb(211, 214, 49); 
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+    font-size: 30px;
+    z-index: 3;
+}
+.hero button:hover{
+    background-color: red;
+}
+.wel{
+    width: 80%;
+    margin: auto;
+}
+.wel1{
+    width: 30%;
+    height: 70vh;
+    text-align: center;
+    border: 2px solid gold;
+    border-radius: 10px;
+    position: relative;
+}
+.wel2{
+    background-image: url(../photos/1716230976139.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+.wel3{
+    background-image: url(../photos/1716230976144.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 0px 5%;
+}
+.wel4{
+    background-image: url(../photos/1716230976148.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+}
+.wel-text{
+    text-align: center;
+    font-size: 80px;
+    opacity: 0;
+    transition: .5s;
+    margin-top: 40px;
+    color: gold;
+}
+.wel1:hover .wel-text{
+    opacity: 1;
+}
+.wel-text button{
+    margin-top: 20px;
+    font-size: 30px;
+    width: 100px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 10px;
+    transition: .3s;
+    z-index: 4;
+    position: absolute;
+   transform: translate(-50%,-50%);
+}
+.wel-but:hover{
+    background-color: rgb(189, 24, 24);
+}
+.line{
+    width: 200px;
+    height: 3px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    background-color: black;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.wel h2{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 60px;
+    color: gold;
+}
+.wel-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,30%);
+
+}
+.wel-overlay i{
+font-size: 40px;
+opacity: 0;
+transition: .5s;
+color: gold;
+}
+.wel-overlay:hover i{
+    opacity: 1;
+}
+.map{
+    width: 80%;
+    margin: auto;
+}
+.map1{
+    width: 30%;
+    border: 1px solid gold;
+    border-radius: 20px;
+    float: left;
+}
+.map2{
+ background-image: url(../photos/1716310347818.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+
+
+}
+.map3{
+ background-image: url(../photos/1716310347813.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ float: left;
+
+ margin: 0px 5%;
+
+}
+.map4{
+ background-image: url(../photos/1716310347807.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ float: right;
+
+}
+.map h2{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 60px;
+    color: gold;
+}
+.map1 button{
+    margin-top: 100px;
+    font-size: 30px;
+    width: 100px;
+    height: 50px;
+    background-color: gold;
+    border-radius: 10px;
+    transition: .3s;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+.map1 p{
+    text-align: center;
+    font-size: 80px;
+    opacity: 0;
+    transition: .5s;
+    margin-top: 40px;
+    color: gold;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+.map1:hover p{
+    opacity: 1;
+}
+.map1:hover button{
+    opacity: 1;
+}
+.map1 button:hover{
+    background-color: red;
+}
+.rank{
+    width: 80%;
+    margin: auto;
+}
+.rank h2{
+    text-align: center;
+    font-size: 60px;
+    margin: 20px 0px;
+    color: gold;
+}
+.rank1{
+    float: left;
+    position: relative;
+    width: 30%;
+    background-color: gold;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid gold;
+}
+.rank-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+.rank3{
+    margin: 0px 5%;
+}
+.rank-img{
+    position: relative;
+}
+.rank-overlay{
+    position: absolute;
+   top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,30%);
+    opacity: 0;
+    transition: .5s;
+}
+.rank-overlay i{
+    color: white;
+    background-color: gold;
+    font-size: 40px;
+    border-radius: 12px;
+}
+.rank-text{
+    font-size: 40px;
+}
+.rank-text button{
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    background-color: gold;
+    font-size: 20px;
+    transition: .5s;
+}
+.rank-overlay:hover{
+    opacity: 1;
+}
+.rank-text:hover button{
+    background-color: red;
+    color: gold;
+}
+.weapon{
+    width: 80%;
+    margin: auto;
+    height: 80vh;
+    margin-bottom: 50%;
+}
+.weapon h2{
+    text-align: center;
+    font-size: 60px;
+    margin: 20px 0px;
+    color: gold;
+}
+.weapon1{
+    float: left;
+    position: relative;
+    width: 30%;
+    background-color: gold;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid gold;
+}
+.weapon-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+.weapon2{
+    margin: 0px 5%;
+}
+.weapon-img{
+    position: relative;
+}
+.weapon-overlay{
+    position: absolute;
+    top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0,0,0,30%);
+     opacity: 0;
+     transition: .5s;
+}
+.weapon-overlay i{
+    color: white;
+    background-color: gold;
+    font-size: 40px;
+    border-radius: 12px;
+}
+.weapon-text{
+    font-size: 40px;
+}
+.weapon-text button{
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    background-color: gold;
+    font-size: 20px;
+    transition: .5s;
+}
+.weapon-overlay:hover{
+    opacity: 1;
+}
+.weapon-text:hover button{
+    background-color: red;
+    color: gold;
+}
+.num{
+    width: 100%;
+    text-align: center;
+    height: 60vh;
+    background-image: url(../photos/1716132785075.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.num-overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 50%);
+    text-align: center;
+    padding-top: 10%;
+    opacity: 0;
+    transition: .5s;
+}
+.num-overlay i{
+    font-size: 150px;
+    color: gold;
+
+}
+.num2{
+    margin: 0px 10%;
+}
+.num:hover .num-overlay{
+    opacity: 1;
+}
+.opt{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 25%;
+}
+.opt1{
+    float: left;
+    position: relative;
+    width: 30%;
+    background-color: gold;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid gold;
+    height: 200px;
+    position: relative;
+}
+.opt h2{
+    text-align: center;
+    font-size: 60px;
+    margin: 20px 0px;
+    color: gold;
+}
+.opt3{
+    margin: 0px 5%;
+}
+.opt1 h3{
+    font-size: 40px;
+    color: white;
+}
+.opt1 p{
+    font-size: 20px;
+    color: white;
+    margin-top: 20px; 
+}
+.opt1 i{
+    font-size: 30px;
+    margin-top: 40px;
+    color: white;
+}
+.opt2::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+    text-align: center;
+}
+.opt2:hover::after{
+    width:  100%;
+}
+.opt4::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 0%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+    text-align: center;
+}
+.opt4::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right:  0;
+    width: 50%;
+    height: 0%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+    text-align: center;
+}
+.opt4:hover:after{
+    height: 100%;
+}
+.opt4:hover::before{
+    height: 100%;
+}
+.opt5::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+    text-align: center;
+}
+.opt5:hover::after{
+    width: 100%;
+}
+.opt1:hover i{
+    color: red;
+}
+.opt1:hover h3{
+    color: red;
+}
+.opt1:hover p{
+    color: red;
+}
+.about-img{
+    position: relative;
+}
+.about-overlay{
+    position: absolute;
+    margin-left: 96%;
+}
+.about-img img{
+    width: 30%;
+    height: 80%;
+    right: 0px;
+    float: right;
+    border: 2px solid gold;
+    border-radius: 12px;
+}
+.about h2{
+    text-align: center;
+    font-size: 60px;
+    margin: 20px 0px;
+    color: gold;
+}
+.about-text p{
+    font-size: 40px;
+    line-height: 100px;
+}
+.about-overlay i{
+    font-size: 50px;
+    color:white;
+    background-color: gold;
+    border-radius: 12px;
+    display: block;
+    line-height: 60px;
+    margin-top: 20px;
+    transition: .5s;
+}
+.about-overlay:hover i{
+    color: gold;
+    background-color: white;
+}
+.end{
+    width: 100%;
+    height: 300px;
+    background-color: gold;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 12px;
+}
+.end i{
+   font-size: 70px;
+}
+.end p{
+    margin-top: 150px;
+    font-size: 60px;
+}
